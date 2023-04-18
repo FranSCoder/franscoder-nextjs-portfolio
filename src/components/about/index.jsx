@@ -17,7 +17,7 @@ const index = () => {
           <div className='col-xl-6 col-lg-5 col-12'>
             <div className='row'>
               <div className='col-12'>
-                <h3 className='text-uppercase custom-title mb-0 ft-wt-600'>Personal</h3>
+                <h3 className='text-uppercase custom-title mb-0 ft-wt-600'>Información Personal</h3>
               </div>
               {/* End .col */}
 

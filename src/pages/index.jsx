@@ -8,15 +8,13 @@ import Portfolio from '../components/portfolio/Portfolio'
 import Address from '../components/Address'
 import Social from '../components/Social'
 import Contact from '../components/Contact'
-import Blog from '../components/blog/Blog'
 import SwitchDark from '../components/switch/SwitchDark'
 
 const menuItem = [
   { icon: 'fa-home', menuName: 'Inicio' },
   { icon: 'fa-user', menuName: 'Conóceme' },
-  { icon: 'fa-briefcase', menuName: 'Portfolio' },
+  { icon: 'fa-briefcase', menuName: 'Portafolio' },
   { icon: 'fa-envelope-open', menuName: 'Contacto' },
-  { icon: 'fa-comments', menuName: 'Blog' },
 ]
 
 const HomeDark = () => {
@@ -76,9 +74,9 @@ const HomeDark = () => {
             <TabPanel className='portfolio professional'>
               <div className='title-section text-start text-sm-center' data-aos='fade-up' data-aos-duration='1200'>
                 <h1>
-                  my <span>portfolio</span>
+                  mi <span>portafolio</span>
                 </h1>
-                <span className='title-bg'>works</span>
+                <span className='title-bg'>portafolio</span>
               </div>
               {/* End title */}
               <Portfolio />
@@ -89,18 +87,18 @@ const HomeDark = () => {
             <TabPanel className='contact'>
               <div className='title-section text-start text-sm-center' data-aos='fade-up' data-aos-duration='1200'>
                 <h1>
-                  get in <span>touch</span>
+                  contacta <span>conmigo</span>
                 </h1>
-                <span className='title-bg'>contact</span>
+                <span className='title-bg'>contacto</span>
               </div>
               <div className='container' data-aos='fade-up' data-aos-duration='1200'>
                 <div className='row'>
                   {/*  Left Side Starts */}
                   <div className='col-12 col-lg-4'>
-                    <h3 className='text-uppercase custom-title mb-0 ft-wt-600 pb-3'>{"Don't"} be shy !</h3>
+                    <h3 className='text-uppercase custom-title mb-0 ft-wt-600 pb-3'>No seas tímido/a !</h3>
                     <p className='open-sans-font mb-4'>
-                      Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
-                      opportunities to be part of your visions.
+                      No dudes en ponerte en contacto conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas
+                      creativas o cualquier oportunidad de formar parte de tus visiones.
                     </p>
                     <Address />
                     {/* End Address */}
@@ -120,24 +118,6 @@ const HomeDark = () => {
               {/* End .container */}
             </TabPanel>
             {/* Contact Content Ends */}
-
-            {/* Blog Content Starts */}
-            <TabPanel className='blog'>
-              <div className='title-section text-start text-sm-center ' data-aos='fade-up' data-aos-duration='1200'>
-                <h1>
-                  my <span>blog</span>
-                </h1>
-                <span className='title-bg'>posts</span>
-              </div>
-              <div className='container' data-aos='fade-up' data-aos-duration='1200'>
-                {/*  Articles Starts  */}
-                <div className='row pb-50'>
-                  <Blog />
-                </div>
-                {/* Articles Ends */}
-              </div>
-            </TabPanel>
-            {/* Blog Content Ends */}
           </div>
         </Tabs>
       </div>

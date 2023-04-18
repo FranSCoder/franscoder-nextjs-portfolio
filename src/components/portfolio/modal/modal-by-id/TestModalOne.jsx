@@ -19,23 +19,15 @@ const ModalOne = ({ modalId, setGetModal }) => {
                     <div key={i} className='row open-sans-font'>
                       <div className='col-12 col-sm-6 mb-2'>
                         <i className='fa fa-file-text-o pr-2'></i>
-                        Proyecto: <span className='ft-wt-600 uppercase'>{details.project}</span>
+                        Project: <span className='ft-wt-600 uppercase'>{details.project}</span>
                       </div>
                       <div className='col-12 col-sm-6 mb-2'>
                         <i className='fa fa-code pr-2'></i>
-                        Código :{' '}
-                        <a
-                          className='preview-link'
-                          target='_blank'
-                          rel='noopener noreferrer nofollow'
-                          href={details.codeLink}
-                        >
-                          Abrir en GitHub
-                        </a>{' '}
+                        Code : <span className='ft-wt-600 uppercase'>{details.client}</span>
                       </div>
                       <div className='col-12 col-sm-6 mb-2'>
                         <i className='fa fa-keyboard-o pr-2'></i>
-                        Tecnologías : <span className='ft-wt-600 uppercase'>{details.language}</span>
+                        Language : <span className='ft-wt-600 uppercase'>{details.language}</span>
                       </div>
                       <div className='col-12 col-sm-6 mb-2'>
                         <i className='fa fa-external-link pr-2'></i>
