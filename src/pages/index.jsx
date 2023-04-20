@@ -23,7 +23,7 @@ const HomeDark = () => {
   }, [])
   return (
     <Wrapper>
-      <SEO pageTitle={'Home Dark'} />
+      <SEO pageTitle={'Portafolio de Fran Sánchez'} />
 
       <div className='yellow'>
         <SwitchDark />
@@ -97,8 +97,8 @@ const HomeDark = () => {
                   <div className='col-12 col-lg-4'>
                     <h3 className='text-uppercase custom-title mb-0 ft-wt-600 pb-3'>No seas tímido/a !</h3>
                     <p className='open-sans-font mb-4'>
-                      No dudes en ponerte en contacto conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas
-                      creativas o cualquier oportunidad de formar parte de tus visiones.
+                      No dudes en ponerte en contacto conmigo. Siempre estoy dispuesto a hablar sobre nuevos proyectos,
+                      ideas creativas o visiones.
                     </p>
                     <Address />
                     {/* End Address */}

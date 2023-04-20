@@ -1,7 +1,6 @@
 import Aos from 'aos'
 import { useEffect } from 'react'
 import '../styles/index.scss'
-import ContextProvider from '../Context/ContextProvider'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -9,11 +8,7 @@ function MyApp({ Component, pageProps }) {
       duration: 1200,
     })
   }, [])
-  return (
-    <ContextProvider>
-      <Component {...pageProps} />
-    </ContextProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

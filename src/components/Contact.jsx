@@ -8,7 +8,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-    emailjs.sendForm('service_n4mkhz9', 'template_ugoztxr', form.current, 'user_vYmDSd9PwIuRXUQEDjYwN').then(
+    emailjs.sendForm('service_747dmjc', 'template_qtd7yok', form.current, 'dLj0TUKKxzhLjwoSO').then(
       (result) => {
         console.log(result)
         toast.success('Mensaje enviado correctamente!', {
