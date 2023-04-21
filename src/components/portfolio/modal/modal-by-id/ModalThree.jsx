@@ -64,6 +64,13 @@ const ModalThree = ({ modalId, setGetModal }) => {
                           {details.preview}
                         </a>
                       </div>
+                      <div className='col-12'>
+                        <i className='fa fa-exclamation pr-2'></i>
+                        Aviso:{' '}
+                        <span className='ft-wt-600 uppercase'>
+                          El servidor tarda unos 30 segundos en realizar la primera carga.
+                        </span>
+                      </div>
                     </div>
                   )
                 })}

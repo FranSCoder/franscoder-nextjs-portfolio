@@ -10,7 +10,7 @@ const PortfolioData = [
     id: 1,
     type: 'e-commerce',
     image: Image1,
-    tag: ['mongodb', 'express', 'react', 'node'],
+    tag: ['mongodb', 'express', 'react', 'node', 'render'],
     delayAnimation: '0',
     modalDetails: [
       {
@@ -26,7 +26,7 @@ const PortfolioData = [
     id: 2,
     type: 'job tracker',
     image: Image2,
-    tag: ['mongodb', 'express', 'react', 'node'],
+    tag: ['mongodb', 'express', 'react', 'node', 'render'],
     delayAnimation: '100',
     modalDetails: [
       {
@@ -42,7 +42,7 @@ const PortfolioData = [
     id: 3,
     type: 'admin panel',
     image: Image3,
-    tag: ['mongodb', 'express', 'react', 'node'],
+    tag: ['mongodb', 'express', 'react', 'node', 'render'],
     delayAnimation: '200',
     modalDetails: [
       {

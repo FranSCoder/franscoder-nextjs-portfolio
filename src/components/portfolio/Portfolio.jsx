@@ -34,7 +34,7 @@ const Portfolio = () => {
                       <div className='tab-content' onClick={() => handleModal(id)}>
                         <Image src={image} alt='portfolio project demo' />
                         <h3>
-                          <span className='conent-title'>{type}</span>
+                          <span className='content-title'>{type}</span>
                         </h3>
                       </div>
                     </div>
@@ -54,7 +54,7 @@ const Portfolio = () => {
                       <div className='tab-content' onClick={() => handleModal(id)}>
                         <Image src={image} alt='portfolio project demo' />
                         <h3>
-                          <span className='conent-title'>{type}</span>
+                          <span className='content-title'>{type}</span>
                         </h3>
                       </div>
                       {/* {getModal && <Modal props={modalId} />} */}
@@ -73,7 +73,7 @@ const Portfolio = () => {
                       <div className='tab-content' onClick={() => handleModal(id)}>
                         <Image src={image} alt='portfolio project demo' />
                         <h3>
-                          <span className='conent-title'>{type}</span>
+                          <span className='content-title'>{type}</span>
                         </h3>
                       </div>
                       {/* {getModal && <Modal props={modalId} />} */}

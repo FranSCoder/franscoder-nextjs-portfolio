@@ -24,7 +24,6 @@ const ModalOne = ({ modalId, setGetModal }) => {
       <div className='modal__outside' onClick={() => setGetModal(false)}></div>
       <div className='modal__content'>
         {PortfolioData.filter((item) => item.id === modalId).map((item) => {
-          //
           return (
             <div key={item.id} data-aos='fade'>
               <h2 className='heading mb-2'>{item.type}</h2>
@@ -63,6 +62,13 @@ const ModalOne = ({ modalId, setGetModal }) => {
                         >
                           {details.preview}
                         </a>
+                      </div>
+                      <div className='col-12'>
+                        <i className='fa fa-exclamation pr-2'></i>
+                        Aviso:{' '}
+                        <span className='ft-wt-600 uppercase'>
+                          El servidor tarda unos 30 segundos en realizar la primera carga.
+                        </span>
                       </div>
                     </div>
                   )
