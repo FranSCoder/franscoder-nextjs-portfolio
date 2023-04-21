@@ -10,7 +10,7 @@ const SEO = ({ pageTitle }) => (
       <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
       <meta property='og:title' content='Portafolio personal de Fran Sánchez' />
       <meta property='og:description' content='Portafolio personal en NextJS de FranSCoder' />
-      <meta property='og:image' content='public/portfolio-preview.png' />
+      <meta property='og:image' content='/portfolio-preview.png' />
       <meta property='og:url' content='https://franscoder.com/' />
       <meta property='og:type' content='website' />
       <link rel='icon' href='/favicon.ico' />
