@@ -68,7 +68,7 @@ const ModalThree = ({ modalId, setGetModal }) => {
                         <i className='fa fa-exclamation pr-2'></i>
                         Aviso:{' '}
                         <span className='ft-wt-600 uppercase'>
-                          El servidor tarda unos 30 segundos en realizar la primera carga.
+                          El servidor tiene un tiempo de arranque de treinta segundos.
                         </span>
                       </div>
                     </div>
