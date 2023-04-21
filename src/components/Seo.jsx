@@ -11,6 +11,8 @@ const SEO = ({ pageTitle }) => (
       <meta property='og:title' content='Portafolio personal de Fran Sánchez' />
       <meta property='og:description' content='Portafolio personal en NextJS de FranSCoder' />
       <meta property='og:image' content='/portfolio-preview.png' />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='627' />
       <meta property='og:url' content='https://franscoder.com/' />
       <meta property='og:type' content='website' />
       <link rel='icon' href='/favicon.ico' />
