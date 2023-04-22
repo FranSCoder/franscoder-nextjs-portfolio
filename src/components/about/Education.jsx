@@ -6,21 +6,21 @@ const educationContent = [
     degree: 'DESARROLLO WEB',
     institute: 'AUTOENSEÑANZA',
     details:
-      'Formación autodidacta a través del estudio en plataformas como freeCodeCamp, Udemy o Youtube, la experimentación, la lectura y la interacción con otros programadores.',
+      'Formación autodidacta obtenida construyendo sitios web, a través de la experimentación, la lectura, la interacción con otros programadores y el estudio en plataformas como Udemy, freeCodeCamp o Youtube.',
   },
   {
     year: '2022',
     degree: 'GRADO EN FÍSICA',
     institute: 'U.N.E.D.',
     details:
-      'Formación en materias como computación (C y Maxima), análisis matemático, álgebra, fundamentos de la física, aplicación del método científico y pensamiento lógico entre otros/as.',
+      'Formación en materias como computación (C y Maxima), análisis matemático, álgebra, fundamentos de la física, circuitos, aplicación del método científico y pensamiento lógico entre otros/as.',
   },
   {
     year: '2017',
     degree: 'Grado en Turismo',
     institute: 'Univ. de Cádiz',
     details:
-      'Formación como recepcionista, personal de tierra en aeropuertos, agente de viajes, desarrollador de planes turísticos, entre otros/as. Además, perfeccioné mi inglés, aprendí alemán y obtuve un gran arsenal de soft-skills transferibles a la programación profesional.',
+      'Formación universitaria como profesional del turismo. A destacar mis aprendizajes de ingles, alemán, trabajo en equipo y soft-skills transferibles a la programación profesional.',
   },
 ]
 
