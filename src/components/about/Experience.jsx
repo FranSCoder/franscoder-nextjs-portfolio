@@ -5,7 +5,7 @@ const experienceContent = [
     year: '   2022 - Presente',
     position: 'Desarrollador Web',
     companyName: 'Autónomo',
-    details: 'Construcción de varios sitios webs full-stack con las tecnologías MERN.',
+    details: 'Construcción de sitios web full-stack usando React y las tecnologías MERN.',
   },
   {
     year: '2019 - 2021',
@@ -18,7 +18,7 @@ const experienceContent = [
     position: 'Recepcionista de hotel',
     companyName: 'AllSun, BestHotels, Vincci...',
     details:
-      'Atención cara al público, atención telefónica, check-ins, check-outs, gestión de documentación y facturación, diplomacia, gestión del estrés, organización, trabajo en equipo, etc.',
+      'Atención cara al público, atención telefónica, check-ins, check-outs, gestión de documentación y facturación, diplomacia, gestión del estrés, organización, trabajo en equipo...',
   },
 ]
 

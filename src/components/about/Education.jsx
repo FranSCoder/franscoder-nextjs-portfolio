@@ -13,7 +13,7 @@ const educationContent = [
     degree: 'GRADO EN FÍSICA',
     institute: 'U.N.E.D.',
     details:
-      'Formación en materias como computación (C y Maxima), análisis matemático, álgebra, fundamentos de la física, circuitos, aplicación del método científico y pensamiento lógico entre otros/as.',
+      'Formación en materias como computación (C y Maxima), análisis matemático, álgebra, fundamentos de la física, circuitos electrónicos, aplicación del método científico y pensamiento lógico entre otros/as.',
   },
   {
     year: '2017',

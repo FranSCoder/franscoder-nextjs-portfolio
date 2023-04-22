@@ -18,7 +18,7 @@ const Portfolio = () => {
       <div className='portfolio-main'>
         <Tabs>
           <TabList className='portfolio-tab-list' data-aos='fade-up'>
-            <Tab>ALL</Tab>
+            <Tab>TODOS</Tab>
             <Tab>MERN</Tab>
             <Tab>D3.JS</Tab>
           </TabList>
