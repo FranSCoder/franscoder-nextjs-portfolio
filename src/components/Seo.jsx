@@ -9,8 +9,11 @@ const SEO = ({ pageTitle }) => (
       <meta name='robots' content='noindex, follow' />
       <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
       <meta property='og:title' content='Portafolio personal de Fran Sánchez' />
-      <meta property='og:description' content='Portafolio personal en NextJS de FranSCoder' />
-      <meta property='og:image' content='/portfolio-preview.png' />
+      <meta
+        property='og:description'
+        content='Explora mi perfil completo: información personal, profesional y educativa, experiencia laboral, proyectos destacados y redes sociales. ¡Contáctame para colaboraciones y oportunidades emocionantes!'
+      />
+      <meta property='og:image' content='/portfolio-preview.jpg' />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='627' />
       <meta property='og:url' content='https://franscoder.com/' />
