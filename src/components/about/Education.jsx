@@ -2,7 +2,7 @@ import React from 'react'
 
 const educationContent = [
   {
-    year: 'presente',
+    year: 'actualidad',
     degree: 'DESARROLLO WEB',
     institute: 'AUTODIDACTA',
     details: 'Durante mi formación, he realizado los siguientes cursos:',
