@@ -2,23 +2,30 @@ import React from 'react'
 
 const experienceContent = [
   {
-    year: '   2022 - Presente',
-    position: 'Desarrollador Web',
+    year: '   2022 - Actualidad',
+    position: 'Desarrollador Web Frontend',
     companyName: 'Autónomo',
-    details: 'Construcción de sitios web full-stack usando React y las tecnologías MERN.',
+    details: 'Desde que comencé a formarme, he desarrollado proyectos con las siguientes tecnologías:',
+    technologies: [
+      'React.js para desarrollar varias webs (total de 14), incluyendo el uso de Next.js y las tecnologías MERN.',
+      'JavaScript para desarrollar 5 webs de visualización de datos con la biblioteca D3.js y como lenguaje favorito.',
+      'CSS incluyendo SASS, SCSS, bootstrap, tailwind, MaterialUI,styled-componentes y ChakraUI para estilizar mis webs.',
+      'TypeScript para añadir tipos estáticos en mis proyectos más robustos y otorgar así un grado de corrección extra.',
+      'Git para almacenar mis proyectos, hacer seguimiento de las versiones y de los cambios de estos.',
+    ],
   },
   {
-    year: '2019 - 2021',
+    year: '2018 - 2021',
     position: 'Especialista en evaluación de datos',
     companyName: 'Appen, Autónomo',
-    details: 'Evaluación y corrección de datos relativos a mapas, productos y anuncios online.',
+    details:
+      'Creación, evaluación y corrección de datos relativos a mapas,productos y anuncios online con el fin de entrenar varias IAs.',
   },
   {
-    year: '2017 - presente',
+    year: '2017 - Actualidad',
     position: 'Recepcionista de hotel',
-    companyName: 'AllSun, BestHotels, Vincci...',
-    details:
-      'Atención cara al público, atención telefónica, check-ins, check-outs, gestión de documentación y facturación, diplomacia, gestión del estrés, organización, trabajo en equipo...',
+    companyName: 'Diferentes hoteles',
+    details: '',
   },
 ]
 
@@ -36,6 +43,17 @@ const Experience = () => {
             <span className='place open-sans-font'>{val.companyName}</span>
           </h5>
           <p className='open-sans-font'>{val.details}</p>
+          <ul className='sublist'>
+            {val.technologies
+              ? val.technologies.map((value, i) => {
+                  return (
+                    <li className='sublist-element'>
+                      <p className='open-sans-font ft-sz-12'>{value}</p>
+                    </li>
+                  )
+                })
+              : null}
+          </ul>
         </li>
       ))}
     </ul>

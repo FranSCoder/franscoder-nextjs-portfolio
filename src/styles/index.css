@@ -2,8 +2,6 @@
 @import "../../public/assets/fonts/font-awesome/css/font-awesome.min.css";
 /*----FontAwesome-------*/
 @import 'bootstrap/dist/css/bootstrap.css';
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700");
 .custom-overlay {
   position: fixed;
   top: 0;
@@ -1795,6 +1793,10 @@ hr.separator {
   font-weight: 600;
 }
 
+.ft-secondary-color {
+  color: #bbb;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -2525,6 +2527,10 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-size: 14px;
 }
 
+.about .resume-box .ft-secondary-color {
+  color: #666;
+}
+
 .about .resume-box .place {
   opacity: 0.8;
   font-weight: 600;
@@ -2542,6 +2548,14 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   left: 7px;
   top: 9px;
   opacity: 0.8;
+}
+
+.about .resume-box .sublist {
+  padding-top: 28px;
+}
+
+.about .resume-box .sublist-element {
+  margin-bottom: 25px;
 }
 
 /* Skills */

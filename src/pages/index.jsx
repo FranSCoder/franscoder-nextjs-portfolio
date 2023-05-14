@@ -13,7 +13,7 @@ import SwitchDark from '../components/switch/SwitchDark'
 const menuItem = [
   { icon: 'fa-home', menuName: 'Inicio' },
   { icon: 'fa-user', menuName: 'Conóceme' },
-  { icon: 'fa-briefcase', menuName: 'Portafolio' },
+  { icon: 'fa-briefcase', menuName: 'Portfolio' },
   { icon: 'fa-envelope-open', menuName: 'Contacto' },
 ]
 
@@ -23,7 +23,7 @@ const HomeDark = () => {
   }, [])
   return (
     <Wrapper>
-      <SEO pageTitle={'Portafolio de Fran Sánchez'} />
+      <SEO pageTitle={'Portfolio de Fran Sánchez'} />
 
       <div className='yellow'>
         <SwitchDark />
@@ -32,7 +32,10 @@ const HomeDark = () => {
           <div className='header'>
             <TabList className=' icon-menu  revealator-slideup revealator-once revealator-delay1'>
               {menuItem.map((item, i) => (
-                <Tab className='icon-box' key={i}>
+                <Tab
+                  className='icon-box'
+                  key={i}
+                >
                   <i className={`fa ${item.icon}`}></i>
                   <h2>{item.menuName}</h2>
                 </Tab>
@@ -57,7 +60,10 @@ const HomeDark = () => {
 
             {/* About Content Starts */}
             <TabPanel className='about'>
-              <div data-aos='fade-up' data-aos-duration='1200'>
+              <div
+                data-aos='fade-up'
+                data-aos-duration='1200'
+              >
                 <div className='title-section text-start text-sm-center'>
                   <h1>
                     SOBRE <span>MÍ</span>
@@ -72,11 +78,15 @@ const HomeDark = () => {
 
             {/* Portfolio Content Starts */}
             <TabPanel className='portfolio professional'>
-              <div className='title-section text-start text-sm-center' data-aos='fade-up' data-aos-duration='1200'>
+              <div
+                className='title-section text-start text-sm-center'
+                data-aos='fade-up'
+                data-aos-duration='1200'
+              >
                 <h1>
-                  mi <span>portafolio</span>
+                  mi <span>portfolio</span>
                 </h1>
-                <span className='title-bg'>portafolio</span>
+                <span className='title-bg'>portfolio</span>
               </div>
               {/* End title */}
               <Portfolio />
@@ -85,13 +95,21 @@ const HomeDark = () => {
 
             {/* Contact Content Starts */}
             <TabPanel className='contact'>
-              <div className='title-section text-start text-sm-center' data-aos='fade-up' data-aos-duration='1200'>
+              <div
+                className='title-section text-start text-sm-center'
+                data-aos='fade-up'
+                data-aos-duration='1200'
+              >
                 <h1>
                   contacta <span>conmigo</span>
                 </h1>
                 <span className='title-bg'>contacto</span>
               </div>
-              <div className='container' data-aos='fade-up' data-aos-duration='1200'>
+              <div
+                className='container'
+                data-aos='fade-up'
+                data-aos-duration='1200'
+              >
                 <div className='row'>
                   {/*  Left Side Starts */}
                   <div className='col-12 col-lg-4'>

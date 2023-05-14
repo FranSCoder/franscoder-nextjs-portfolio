@@ -22,7 +22,11 @@ const index = () => {
               {/* End .col */}
 
               <div className='col-12 d-block d-sm-none'>
-                <Image src={heroImgMobile} className='img-fluid main-img-mobile' alt='about avatar' />
+                <Image
+                  src={heroImgMobile}
+                  className='img-fluid main-img-mobile'
+                  alt='about avatar'
+                />
               </div>
               {/* image for mobile menu */}
 
@@ -32,7 +36,11 @@ const index = () => {
               {/* End personal info */}
 
               <div className='col-12 mt-1'>
-                <a className='button' href='/assets/francisco-sanchez-coder-d.pdf' download='fran-sanchez-webdev'>
+                <a
+                  className='button'
+                  href='/assets/cv-webdev-fran.pdf'
+                  download='fran-sanchez-webdev-cv'
+                >
                   <span className='button-text'>Descargar CV</span>
                   <span className='button-icon fa fa-download'></span>
                 </a>

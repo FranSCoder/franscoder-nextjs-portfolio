@@ -76,6 +76,10 @@ hr.separator {
   font-weight: 600;
 }
 
+.ft-secondary-color {
+  color: #bbb;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -827,6 +831,10 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-size: 14px;
 }
 
+.about .resume-box .ft-secondary-color {
+  color: #666;
+}
+
 .about .resume-box .place {
   opacity: 0.8;
   font-weight: 600;
@@ -844,6 +852,14 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   left: 7px;
   top: 9px;
   opacity: 0.8;
+}
+
+.about .resume-box .sublist {
+  padding-top: 28px;
+}
+
+.about .resume-box .sublist-element {
+  margin-bottom: 25px;
 }
 
 /* Skills */
