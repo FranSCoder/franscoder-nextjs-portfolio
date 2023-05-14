@@ -47,7 +47,10 @@ const Experience = () => {
             {val.technologies
               ? val.technologies.map((value, i) => {
                   return (
-                    <li className='sublist-element'>
+                    <li
+                      className='sublist-element'
+                      key={i + 200}
+                    >
                       <p className='open-sans-font ft-sz-12'>{value}</p>
                     </li>
                   )

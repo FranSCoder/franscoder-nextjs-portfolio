@@ -53,7 +53,10 @@ const Education = () => {
             {val.courses
               ? val.courses.map((value, i) => {
                   return (
-                    <li className='sublist-element'>
+                    <li
+                      className='sublist-element'
+                      key={i + 100}
+                    >
                       <p>{value.name}</p>
                       <p className='ft-secondary-color'>
                         {value.platform} - {value.year}
