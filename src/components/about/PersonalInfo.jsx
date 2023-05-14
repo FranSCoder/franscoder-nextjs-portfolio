@@ -7,9 +7,9 @@ const personalInfoContent = [
   { meta: 'Nacionalidad', metaInfo: 'Español', hasColor: '' },
   { meta: 'Empleo', metaInfo: 'Disponible', hasColor: 'green' },
   { meta: 'Dirección', metaInfo: 'España', hasColor: '' },
-  { meta: 'Teléfono', metaInfo: '+34 663359457', hasColor: '' },
+  { meta: 'Teléfono', metaInfo: '+34 663 35 94 57', hasColor: '' },
   { meta: 'Email', metaInfo: 'franscoder@gmail.com', hasColor: '' },
-  { meta: 'idiomas', metaInfo: 'Castellano, Inglés', hasColor: '' },
+  { meta: 'Idiomas', metaInfo: 'Castellano, Inglés, Alemán', hasColor: '' },
 ]
 
 const PersonalInfo = () => {

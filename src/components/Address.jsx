@@ -5,7 +5,7 @@ const Address = () => {
     <>
       <p className='open-sans-font custom-span-contact position-relative'>
         <i className='fa fa-map position-absolute'></i>
-        <span className='d-block'>Dirección</span>Denia, 03700, España.
+        <span className='d-block'>Dirección</span>Sanlúcar de Barrameda, Cádiz, España.
       </p>
       {/* End .custom-span-contact */}
 
@@ -17,7 +17,7 @@ const Address = () => {
 
       <p className='open-sans-font custom-span-contact position-relative'>
         <i className='fa fa-phone-square position-absolute'></i>
-        <span className='d-block'>Teléfono</span> <a href='Tel: +34 663359457'>+34 663359457</a>
+        <span className='d-block'>Teléfono</span> <a href='Tel: +34 663 35 94 57'>+34 663 35 94 57</a>
       </p>
       {/* End .custom-span-contact */}
     </>
