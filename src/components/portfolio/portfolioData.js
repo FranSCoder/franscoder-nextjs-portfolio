@@ -4,6 +4,7 @@ import Image3 from '../../../public/assets/img/portfolio/ecomvision-overview-por
 import Image4 from '../../../public/assets/img/portfolio/chart-map.png'
 import Image5 from '../../../public/assets/img/portfolio/chart-heat.png'
 import Image6 from '../../../public/assets/img/portfolio/chart-square-color.png'
+import Image7 from '../../../public/assets/img/portfolio/plate-calculator1.png'
 
 const PortfolioData = [
   {
@@ -40,10 +41,26 @@ const PortfolioData = [
   },
   {
     id: 3,
+    type: 'plate calculator',
+    image: Image7,
+    tag: ['react', 'react-native'],
+    delayAnimation: '200',
+    modalDetails: [
+      {
+        project: 'Calculadora de discos',
+        codeLink: 'https://github.com/FranSCoder/plate-counter-app',
+        language: 'React Native, ReactJS',
+        preview: 'https://play.google.com/platecounterapp',
+        link: 'https://play.google.com/store/apps/details?id=com.franscoder.platecounterapp',
+      },
+    ],
+  },
+  {
+    id: 4,
     type: 'admin panel',
     image: Image3,
     tag: ['mongodb', 'express', 'react', 'node', 'render'],
-    delayAnimation: '200',
+    delayAnimation: '0',
     modalDetails: [
       {
         project: 'Ecomvision',
@@ -55,11 +72,11 @@ const PortfolioData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     type: 'cartograma',
     image: Image4,
     tag: ['d3'],
-    delayAnimation: '0',
+    delayAnimation: '100',
     modalDetails: [
       {
         project: 'Mapa de educación en los EE.UU.',
@@ -71,11 +88,11 @@ const PortfolioData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     type: 'mapa de calor',
     image: Image5,
     tag: ['d3'],
-    delayAnimation: '100',
+    delayAnimation: '0',
     modalDetails: [
       {
         project: 'Evolución de la temperatura global',
@@ -87,11 +104,11 @@ const PortfolioData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     type: 'gráfica de áreas y colores',
     image: Image6,
     tag: ['d3'],
-    delayAnimation: '200',
+    delayAnimation: '100',
     modalDetails: [
       {
         project: 'Top 100 Películas',

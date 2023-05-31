@@ -7,8 +7,8 @@ import 'slick-carousel/slick/slick-theme.css'
 // internal
 import CloseImg from '../../../../../public/assets/img/cancel.svg'
 import PortfolioData from '../../portfolioData'
-import img1 from '../../../../../public/assets/img/portfolio/ecomvision-products-portfolio.png'
-import img2 from '../../../../../public/assets/img/portfolio/ecomvision-dailysales-portfolio.png'
+import img1 from '../../../../../public/assets/img/portfolio/plate-calculator2.png'
+import img2 from '../../../../../public/assets/img/portfolio/plate-calculator3.png'
 
 const ModalThree = ({ modalId, setGetModal }) => {
   let settings = {
@@ -21,17 +21,26 @@ const ModalThree = ({ modalId, setGetModal }) => {
   }
   return (
     <div className='modal_portfolio'>
-      <div className='modal__outside' onClick={() => setGetModal(false)}></div>
+      <div
+        className='modal__outside'
+        onClick={() => setGetModal(false)}
+      ></div>
       <div className='modal__content'>
-        {PortfolioData.filter((item) => item.id === modalId).map((item) => {
+        {PortfolioData.filter(item => item.id === modalId).map(item => {
           //
           return (
-            <div key={item.id} data-aos='fade'>
+            <div
+              key={item.id}
+              data-aos='fade'
+            >
               <h2 className='heading mb-2'>{item.type}</h2>
               <div className='modal__details'>
                 {item.modalDetails.map((details, i) => {
                   return (
-                    <div key={i} className='row open-sans-font'>
+                    <div
+                      key={i}
+                      className='row open-sans-font'
+                    >
                       <div className='col-12 col-sm-6 mb-2'>
                         <i className='fa fa-file-text-o pr-2'></i>
                         Proyecto: <span className='ft-wt-600 uppercase'>{details.project}</span>
@@ -64,13 +73,6 @@ const ModalThree = ({ modalId, setGetModal }) => {
                           {details.preview}
                         </a>
                       </div>
-                      <div className='col-12'>
-                        <i className='fa fa-exclamation pr-2'></i>
-                        Aviso:{' '}
-                        <span className='ft-wt-600 uppercase'>
-                          El servidor tiene un tiempo de arranque de treinta segundos.
-                        </span>
-                      </div>
                     </div>
                   )
                 })}
@@ -78,19 +80,34 @@ const ModalThree = ({ modalId, setGetModal }) => {
               <figure className='modal__img'>
                 <Slider {...settings}>
                   <div>
-                    <Image src={item.image} alt='portfolio project demo' />
+                    <Image
+                      src={item.image}
+                      alt='portfolio project demo'
+                    />
                   </div>
                   <div>
-                    <Image src={img1} alt='portfolio project demo' />
+                    <Image
+                      src={img1}
+                      alt='portfolio project demo'
+                    />
                   </div>
                   <div>
-                    <Image src={img2} alt='portfolio project demo' />
+                    <Image
+                      src={img2}
+                      alt='portfolio project demo'
+                    />
                   </div>
                 </Slider>
               </figure>
 
-              <button className='close-modal' onClick={() => setGetModal(false)}>
-                <Image src={CloseImg} alt='portfolio project demo' />
+              <button
+                className='close-modal'
+                onClick={() => setGetModal(false)}
+              >
+                <Image
+                  src={CloseImg}
+                  alt='portfolio project demo'
+                />
               </button>
             </div>
           )

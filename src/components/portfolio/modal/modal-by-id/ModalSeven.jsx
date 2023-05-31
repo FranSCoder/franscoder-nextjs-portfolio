@@ -1,30 +1,15 @@
-// external
 import Image from 'next/image'
 import React from 'react'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-// internal
 import CloseImg from '../../../../../public/assets/img/cancel.svg'
 import PortfolioData from '../../portfolioData'
-import img1 from '../../../../../public/assets/img/portfolio/ecomvision-products-portfolio.png'
-import img2 from '../../../../../public/assets/img/portfolio/ecomvision-dailysales-portfolio.png'
 
-const ModalThree = ({ modalId, setGetModal }) => {
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-  }
+const ModalOne = ({ modalId, setGetModal }) => {
   return (
-    <div className='modal_portfolio'>
+    <div className='modal_portfolio '>
       <div className='modal__outside' onClick={() => setGetModal(false)}></div>
+      <div></div>
       <div className='modal__content'>
         {PortfolioData.filter((item) => item.id === modalId).map((item) => {
-          //
           return (
             <div key={item.id} data-aos='fade'>
               <h2 className='heading mb-2'>{item.type}</h2>
@@ -64,29 +49,12 @@ const ModalThree = ({ modalId, setGetModal }) => {
                           {details.preview}
                         </a>
                       </div>
-                      <div className='col-12'>
-                        <i className='fa fa-exclamation pr-2'></i>
-                        Aviso:{' '}
-                        <span className='ft-wt-600 uppercase'>
-                          El servidor tiene un tiempo de arranque de treinta segundos.
-                        </span>
-                      </div>
                     </div>
                   )
                 })}
               </div>
               <figure className='modal__img'>
-                <Slider {...settings}>
-                  <div>
-                    <Image src={item.image} alt='portfolio project demo' />
-                  </div>
-                  <div>
-                    <Image src={img1} alt='portfolio project demo' />
-                  </div>
-                  <div>
-                    <Image src={img2} alt='portfolio project demo' />
-                  </div>
-                </Slider>
+                <Image src={item.image} alt='portfolio project demo' />
               </figure>
 
               <button className='close-modal' onClick={() => setGetModal(false)}>
@@ -100,4 +68,4 @@ const ModalThree = ({ modalId, setGetModal }) => {
   )
 }
 
-export default ModalThree
+export default ModalOne
