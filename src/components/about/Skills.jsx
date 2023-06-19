@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 const skillsContent = [
   { skillClass: 'p86', skillPercent: '86', skillName: 'REACT' },
   { skillClass: 'p89', skillPercent: '89', skillName: 'JAVASCRIPT' },
   { skillClass: 'p83', skillPercent: '83', skillName: 'CSS3' },
-  { skillClass: 'p66', skillPercent: '66', skillName: 'TYPESCRIPT' },
+  { skillClass: 'p82', skillPercent: '82', skillName: 'TYPESCRIPT' },
   { skillClass: 'p81', skillPercent: '81', skillName: 'GIT' },
-  { skillClass: 'p79', skillPercent: '79', skillName: 'DATABASES' },
+  { skillClass: 'p79', skillPercent: '79', skillName: 'SQL & MONGODB' },
   { skillClass: 'p77', skillPercent: '77', skillName: 'NODE.JS' },
   { skillClass: 'p76', skillPercent: '76', skillName: 'NEXT.JS' },
-]
+];
 
 const Skills = () => {
   return (
@@ -26,11 +26,13 @@ const Skills = () => {
               <div className='fill'></div>
             </div>
           </div>
-          <h6 className='text-uppercase open-sans-font text-center mt-2 mt-sm-4'>{val.skillName}</h6>
+          <h6 className='text-uppercase open-sans-font text-center mt-2 mt-sm-4'>
+            {val.skillName}
+          </h6>
         </div>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

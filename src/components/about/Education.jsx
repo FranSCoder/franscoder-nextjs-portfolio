@@ -1,22 +1,49 @@
-import React from 'react'
+import React from 'react';
 
 const educationContent = [
   {
     year: 'actualidad',
     degree: 'DESARROLLO WEB',
     institute: 'AUTODIDACTA',
-    details: 'Durante mi formación, he realizado los siguientes cursos:',
+    details:
+      'Durante mi formación, he realizado infinidad de cursos, de los cuales los más relevantes son los siguientes:',
     courses: [
-      { name: 'MERN Stack Course - MongoDB, Express, React and NodeJS', platform: 'Udemy', year: '2023' },
-      { name: 'Build an e-commerce app with React and Chakra UI MERN [2023]', platform: 'Udemy', year: '2023' },
+      {
+        name: 'CURSANDO - Microservices with Node JS and React',
+        platform: 'Udemy',
+        year: '2023',
+      },
+      { name: 'Understanding TypeScript', platform: 'Udemy', year: '2023' },
+      {
+        name: 'MERN Stack Course - MongoDB, Express, React and NodeJS',
+        platform: 'Udemy',
+        year: '2023',
+      },
+      {
+        name: 'Build an e-commerce app with React and Chakra UI MERN [2023]',
+        platform: 'Udemy',
+        year: '2023',
+      },
       {
         name: 'Build and Deploy a React Native App | 2023 React Native Course Tutorial for Beginners',
         platform: 'YouTube',
         year: '2023',
       },
-      { name: 'Next.js Tutorial for Beginners', platform: 'YouTube', year: '2023' },
-      { name: 'Learn TypeScript - Full Tutorial', platform: 'YouTube', year: '2023' },
-      { name: 'Full-stack Web Developer Course', platform: 'freeCodeCamp', year: '2022' },
+      {
+        name: 'Next.js Tutorial for Beginners',
+        platform: 'YouTube',
+        year: '2023',
+      },
+      {
+        name: 'Learn TypeScript - Full Tutorial',
+        platform: 'YouTube',
+        year: '2023',
+      },
+      {
+        name: 'Fullstack Web Developer Course',
+        platform: 'freeCodeCamp',
+        year: '2022',
+      },
     ],
   },
   {
@@ -33,7 +60,7 @@ const educationContent = [
     details:
       'Formación universitaria como profesional del turismo. A destacar mis aprendizajes de ingles, alemán, trabajo en equipo y soft-skills transferibles a la programación profesional.',
   },
-]
+];
 
 const Education = () => {
   return (
@@ -62,14 +89,14 @@ const Education = () => {
                         {value.platform} - {value.year}
                       </p>
                     </li>
-                  )
+                  );
                 })
               : null}
           </ul>
         </li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
