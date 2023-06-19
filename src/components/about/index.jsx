@@ -40,7 +40,7 @@ const index = () => {
               <div className='col-12 mt-1'>
                 <a
                   className='button'
-                  href='/assets/cv-webdev-fran.pdf'
+                  href='/assets/francisco_sanchez_webdev_2023.pdf'
                   download='francisco_sanchez_webdev_2023'
                 >
                   <span className='button-text'>Descargar CV</span>
