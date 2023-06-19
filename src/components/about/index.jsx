@@ -1,11 +1,11 @@
-import React from 'react'
-import Achievements from './Achievements'
-import Education from './Education'
-import Experience from './Experience'
-import PersonalInfo from './PersonalInfo'
-import Skills from './Skills'
-import heroImgMobile from '../../../public/assets/img/hero/img-mobile.png'
-import Image from 'next/image'
+import React from 'react';
+import Achievements from './Achievements';
+import Education from './Education';
+import Experience from './Experience';
+import PersonalInfo from './PersonalInfo';
+import Skills from './Skills';
+import heroImgMobile from '../../../public/assets/img/hero/img-mobile.png';
+import Image from 'next/image';
 
 const index = () => {
   return (
@@ -17,7 +17,9 @@ const index = () => {
           <div className='col-xl-6 col-lg-5 col-12'>
             <div className='row'>
               <div className='col-12'>
-                <h3 className='text-uppercase custom-title mb-0 ft-wt-600'>Información Personal</h3>
+                <h3 className='text-uppercase custom-title mb-0 ft-wt-600'>
+                  Información Personal
+                </h3>
               </div>
               {/* End .col */}
 
@@ -39,7 +41,7 @@ const index = () => {
                 <a
                   className='button'
                   href='/assets/cv-webdev-fran.pdf'
-                  download='fran-sanchez-webdev-cv'
+                  download='francisco_sanchez_webdev_2023'
                 >
                   <span className='button-text'>Descargar CV</span>
                   <span className='button-icon fa fa-download'></span>
@@ -94,7 +96,7 @@ const index = () => {
         {/*  Experience & Education Ends */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default index
+export default index;
