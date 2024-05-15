@@ -2,6 +2,13 @@ import React from "react";
 
 const experienceContent = [
   {
+    year: "2023 - Actualidad",
+    position: "RPA Developer & Support Lead",
+    companyName: "MCCM Innovations",
+    details:
+      "Trabajando en un importante proyecto de Siemens Gamesa Renewable Energy, construyendo Automatizaciones RPA y liderando un equipo internacional de 4 personas, a través del cual proporcionamos soporte técnico a procesos en producción (36 procesos).",
+  },
+  {
     year: "   2022 - Actualidad",
     position: "Desarrollador Web Frontend",
     companyName: "Autónomo",
@@ -48,10 +55,7 @@ const Experience = () => {
             {val.technologies
               ? val.technologies.map((value, i) => {
                   return (
-                    <li
-                      className='sublist-element'
-                      key={i + 200}
-                    >
+                    <li className='sublist-element' key={i + 200}>
                       <p className='open-sans-font ft-sz-12'>{value}</p>
                     </li>
                   );

@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
-import Modal from 'react-modal'
-import heroImgMobile from '../../../public/assets/img/hero/img-mobile.png'
-import cancelImg from '../../../public/assets/img/cancel.svg'
-import AboutMain from '../about'
-import Image from 'next/image'
+import React, { useState } from "react";
+import Modal from "react-modal";
+import heroImgMobile from "../../../public/assets/img/hero/img-mobile.png";
+import cancelImg from "../../../public/assets/img/cancel.svg";
+import AboutMain from "../about";
+import Image from "next/image";
 
 const heroContent = {
-  heroImage: '/assets/img/hero/dark.png',
+  heroImage: "/assets/img/hero/dark.png",
   heroMobileImage: heroImgMobile,
-  heroTitleName: 'fran sánchez',
-  heroDesignation: 'desarrollador web - react.js',
+  heroTitleName: "fran sánchez",
+  heroDesignation: "desarrollador - react.js",
   heroDescriptions: `Mi misión es elaborar sitios web con una experiencia de usuario sencilla y limpia. Me apasiona crear soluciones para aquellos/as que me rodean.`,
-  heroBtn: 'más sobre mí',
-}
+  heroBtn: "más sobre mí",
+};
 
 const Hero = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   function toggleModalOne() {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   }
 
   return (
@@ -36,7 +36,8 @@ const Hero = () => {
               // style={{width:'100%',height:'100%'}}
             />
             <h1 className='text-uppercase poppins-font'>
-              {'soy'} {heroContent.heroTitleName}.<span>{heroContent.heroDesignation}</span>
+              {"soy"} {heroContent.heroTitleName}.
+              <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className='open-sans-font'>{heroContent.heroDescriptions}</p>
             <button className='button' onClick={toggleModalOne}>
@@ -80,7 +81,7 @@ const Hero = () => {
       </Modal>
       {/* End  Modal for About More */}
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

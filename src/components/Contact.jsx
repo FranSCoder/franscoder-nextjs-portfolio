@@ -1,40 +1,47 @@
-import React, { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import { toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm('service_747dmjc', 'template_qtd7yok', form.current, 'dLj0TUKKxzhLjwoSO').then(
-      (result) => {
-        console.log(result)
-        toast.success('Mensaje enviado correctamente!', {
-          position: 'top-right',
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        })
-        document.getElementById('myForm').reset()
-      },
-      (error) => {
-        toast.error('Ups Mensaje no enviado!', {
-          position: 'top-right',
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        })
-      }
-    )
-  }
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_747dmjc",
+        "template_qtd7yok",
+        form.current,
+        "dLj0TUKKxzhLjwoSO"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          toast.success("Mensaje enviado correctamente!", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          document.getElementById("myForm").reset();
+        },
+        (error) => {
+          toast.error("Ups, mensaje no enviado!", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      );
+  };
 
   return (
     <>
@@ -49,7 +56,12 @@ const Contact = () => {
 
           <div className='col-12 col-md-6'>
             <div className='form-group'>
-              <input type='email' name='user_email' placeholder='TU EMAIL' required />
+              <input
+                type='email'
+                name='user_email'
+                placeholder='TU EMAIL'
+                required
+              />
             </div>
           </div>
           {/* End .col */}
@@ -63,7 +75,11 @@ const Contact = () => {
 
           <div className='col-12'>
             <div className='form-group'>
-              <textarea name='message' placeholder='TU MENSAJE' required></textarea>
+              <textarea
+                name='message'
+                placeholder='TU MENSAJE'
+                required
+              ></textarea>
             </div>
           </div>
           {/* End .col */}
@@ -78,7 +94,7 @@ const Contact = () => {
         </div>
       </form>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

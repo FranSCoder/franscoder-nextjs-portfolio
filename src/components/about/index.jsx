@@ -1,11 +1,11 @@
-import React from 'react';
-import Achievements from './Achievements';
-import Education from './Education';
-import Experience from './Experience';
-import PersonalInfo from './PersonalInfo';
-import Skills from './Skills';
-import heroImgMobile from '../../../public/assets/img/hero/img-mobile.png';
-import Image from 'next/image';
+import React from "react";
+import Achievements from "./Achievements";
+import Education from "./Education";
+import Experience from "./Experience";
+import PersonalInfo from "./PersonalInfo";
+import Skills from "./Skills";
+import heroImgMobile from "../../../public/assets/img/hero/img-mobile.png";
+import Image from "next/image";
 
 const index = () => {
   return (
@@ -40,8 +40,8 @@ const index = () => {
               <div className='col-12 mt-1'>
                 <a
                   className='button'
-                  href='/assets/francisco_sanchez_webdev_2023.pdf'
-                  download='francisco_sanchez_webdev_2023'
+                  href='/assets/francisco_sanchez_dev_2024.pdf'
+                  download='francisco_sanchez_dev_2024'
                 >
                   <span className='button-text'>Descargar CV</span>
                   <span className='button-icon fa fa-download'></span>

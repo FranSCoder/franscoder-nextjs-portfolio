@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const achievementsContent = [{ title: '34', subTitle1: 'proyectos', subTitle2: 'finalizados' }]
+const achievementsContent = [
+  { title: "40", subTitle1: "proyectos", subTitle2: "finalizados" },
+];
 
 const Achievements = () => {
   return (
@@ -16,7 +18,7 @@ const Achievements = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Achievements
+export default Achievements;
