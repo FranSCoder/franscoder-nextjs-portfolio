@@ -10,7 +10,7 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "fran sánchez",
   heroDesignation: "desarrollador - react.js",
-  heroDescriptions: `Mi misión es elaborar sitios web con una experiencia de usuario sencilla y limpia. Me apasiona crear soluciones para aquellos/as que me rodean.`,
+  heroDescriptions: `Mi misión es elaborar webs y aplicaciones con una experiencia de usuario sencilla y limpia. Me apasiona crear soluciones para aquellos/as que me rodean.`,
   heroBtn: "más sobre mí",
 };
 
